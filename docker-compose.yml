@@ -8,3 +8,6 @@ services:
   build: ./client
   ports:
    - "3002:4200"
+  volumes:
+   - ./client:/usr/src/app
+   - /usr/src/app/node_modules
